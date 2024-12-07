@@ -4,30 +4,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(54, 162, 178); 
-    color: rgb(51, 51, 51);
+    background-color: rgb(54, 162, 178);
+    color: rgb(0,0,0);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 header {
     background-color: rgb(54, 162, 178);
     padding: 20px;
     text-align: center;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     width: 100%;
 }
 
 .header-image {
     width: 100%;
-    max-height: 200px; 
-    height: auto; 
+    max-height: 200px;
+    height: auto;
     display: block;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 nav ul {
@@ -36,8 +36,8 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: rgb(54, 162, 178); 
-    width: 100%; 
+    background-color: rgb(54, 162, 178);
+    width: 100%;
 }
 
     nav ul li {
@@ -52,7 +52,7 @@ nav ul {
         }
 
             nav ul li a:hover {
-                background-color: rgb(255, 111, 97); 
+                background-color: rgb(255, 111, 97);
             }
 
 main {
@@ -69,25 +69,136 @@ section {
     max-width: 1200px;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgba(255, 204, 0, 0.5); 
+    background-color: rgba(255, 204, 0, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 footer {
-    background-color: rgb(0, 191, 255); 
-    color: rgb(255, 255, 255); 
+    background-color: rgb(0, 191, 255);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 0;
-    width: 100%; 
-    background-color: rgba(0, 191, 255, 0.8); 
+    width: 100%;
+    background-color: rgba(0, 191, 255, 0.8);
 }
+
 /* Flexbox Layout */
 
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center blocks horizontally */
+    align-items: center;
+}
+
+/* Form Styles */
+form#newsletter-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-group input[type="submit"],
+    .form-group input[type="reset"] {
+        width: 48%;
+        padding: 10px;
+        background-color: rgb(76, 175, 80);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 2%;
+        box-sizing: border-box;
+    }
+
+    .form-group input[type="reset"] {
+        background-color: rgb(244, 67, 54);
+    }
+
+    .form-group input[type="submit"]:hover {
+        background-color: rgb(69, 160, 73);
+    }
+
+    .form-group input[type="reset"]:hover {
+        background-color: rgb(211, 47, 47);
+    }
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+    .gallery figure {
+        margin: 0;
+        border: 2px solid rgb(204, 204, 204); /* Converted color */
+        border-radius: 10px;
+        overflow: hidden;
+        width: calc(25% - 30px);
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .gallery figcaption {
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(244, 244, 244);
+        font-weight: bold;
+    }
+
+/* Content Section */
+.content {
+    padding: 20px;
+}
+
+/* Article Styles */
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(255, 204, 0, 0.1); /* Converted color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    article h2 {
+        color: rgb(0,0,0)
+    }
+
+/* Recipe Styles */
+.recipe {
+    margin-bottom: 15px;
 }
